@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import Banner from './components/banner';
+import { Box } from '@mui/material';
+import bgImage from './assests/banner-bg.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box
+      sx={{
+        bgcolor: "#090d16",
+        backgroundImage: `
+          radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 45%),
+          radial-gradient(circle at 85% 75%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+          linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px)
+        `,
+        backgroundSize: "100% 100%, 100% 100%, 45px 45px, 45px 45px",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Header />
+      <Banner />
+    </Box>
   );
 }
 
