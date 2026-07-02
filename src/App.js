@@ -1,8 +1,8 @@
 import './App.css';
 import Header from './components/header';
 import Banner from './components/banner';
+import bgImage from './assets/banner-bg.jpg';
 import { Box } from '@mui/material';
-import bgImage from './assests/banner-bg.jpg';
 
 function App() {
   return (
