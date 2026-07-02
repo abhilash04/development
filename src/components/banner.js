@@ -1,8 +1,6 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import {
-    Avatar,
-    AvatarGroup,
     Box,
     Button,
     Chip,
@@ -16,12 +14,9 @@ import {
 } from "@mui/material";
 
 import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import BusinessIcon from "@mui/icons-material/Business";
 import PersonIcon from "@mui/icons-material/Person";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
 const StyledSelect = styled("select")({
     width: "100%",
